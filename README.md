@@ -1,4 +1,9 @@
+# DAMV
 Simple utility that will move all files in subdirectories to the parent directory prefixed with the former subdirectory name
+
+## Install
+
+`go install github.com/davidwashere/damv`
 
 ## Usage
 
