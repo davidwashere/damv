@@ -18,7 +18,7 @@ type FileMove struct {
 
 func confirm() bool {
 	reader := bufio.NewReader(os.Stdin)
-	fmt.Print("Hit Enter to Continue (cancel otherwise) [Enter]: ")
+	fmt.Print("[Enter] to execute rename, typing anything else aborts: ")
 	text, err := reader.ReadString('\n')
 	check(err)
 	text = strings.TrimSpace(text)
@@ -96,7 +96,7 @@ func main() {
 
 	fmtstr := "  %-" + strconv.Itoa(maxlen) + "v => %v\n"
 
-	fmt.Printf("Pending file Moves: \n\n")
+	fmt.Printf("Pending moves: \n\n")
 
 	for _, move := range moves {
 		// fmt.Printf("%v\n", move)
