@@ -21,7 +21,7 @@ func init() {
 
 var sequenceCmd = &cobra.Command{
 	Use:   "seq NAME",
-	Short: "Seq things",
+	Short: "Renames files with a base name + sequence number",
 	Long: `Seq will rename files in the current directory to NAME plus an incrementing 
 number suffix
 

@@ -18,7 +18,7 @@ Usage:
 Available Commands:
   help        Help about any command
   prefix      Adds prefix to files in current directory
-  seq         Seq things
+  seq         Renames files with a base name + sequence number
   subdir      Moves files in subdirs to current dir while prefixing subdir to filename
 
 Flags:
