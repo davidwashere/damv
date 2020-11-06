@@ -17,7 +17,7 @@ func init() {
 
 var subdirCmd = &cobra.Command{
 	Use:   "subdir",
-	Short: "Moves files in subdirs to current dir while prefixing subdir to filename",
+	Short: "Moves files in subdirs to current dir prepending subdir to filename",
 	// Long:  ``,
 	Run: func(cmd *cobra.Command, args []string) {
 		subdirs()

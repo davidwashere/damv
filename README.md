@@ -17,9 +17,9 @@ Usage:
 
 Available Commands:
   help        Help about any command
-  prefix      Adds prefix to files in current directory
+  prefix      Adds prefix to files
   seq         Renames files with a base name + sequence number
-  subdir      Moves files in subdirs to current dir while prefixing subdir to filename
+  subdir      Moves files in subdirs to current dir prepending subdir to filename
 
 Flags:
   -h, --help   help for damv

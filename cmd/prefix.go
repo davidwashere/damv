@@ -21,7 +21,7 @@ var (
 
 var prefixCmd = &cobra.Command{
 	Use:   "prefix PREFIX",
-	Short: "Adds prefix to files in current directory",
+	Short: "Adds prefix to files",
 	// Long:  ``,
 	Args: cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
