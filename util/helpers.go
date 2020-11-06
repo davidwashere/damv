@@ -36,7 +36,7 @@ type FileMove struct {
 	NewPath string
 }
 
-func PrintMoves(base string, moves []FileMove) {
+func PrintMoves(base string, moves []*FileMove) {
 	maxlen := 0
 	for _, move := range moves {
 		relold, _ := filepath.Rel(base, move.OldPath)

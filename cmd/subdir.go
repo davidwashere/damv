@@ -35,7 +35,7 @@ func subdirs() {
 	dirs, err := ioutil.ReadDir(cwd)
 	util.ErrCheck(err)
 
-	moves := []util.FileMove{}
+	moves := []*util.FileMove{}
 
 	for _, file := range dirs {
 		if !file.IsDir() {
@@ -64,7 +64,7 @@ func subdirs() {
 			newpath := filepath.Join(filepath.Dir(path), newfile)
 
 			move := util.FileMove{oldpath, newpath}
-			moves = append(moves, move)
+			moves = append(moves, &move)
 
 			// fmt.Printf("    Move %v\n", move)
 		}

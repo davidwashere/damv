@@ -41,7 +41,7 @@ func prefix(args []string) {
 	dirs, err := ioutil.ReadDir(cwd)
 	util.ErrCheck(err)
 
-	moves := []util.FileMove{}
+	moves := []*util.FileMove{}
 
 	newPrefix := args[0]
 
@@ -65,7 +65,7 @@ func prefix(args []string) {
 			OldPath: oldpath,
 			NewPath: newPath,
 		}
-		moves = append(moves, move)
+		moves = append(moves, &move)
 	}
 
 	util.PrintMoves(cwd, moves)
