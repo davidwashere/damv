@@ -18,6 +18,7 @@ Usage:
 Available Commands:
   help        Help about any command
   prefix      Adds prefix to files in current directory
+  seq         Seq things
   subdir      Moves files in subdirs to current dir while prefixing subdir to filename
 
 Flags:
@@ -25,7 +26,6 @@ Flags:
 
 Use "damv [command] --help" for more information about a command.
 ```
-
 
 ## Example: subdir
 Assuming:
@@ -106,4 +106,34 @@ Will yield:
 ```
 hello1.txt
 hello2.txt
+```
+
+## Example: seq
+Assuming:
+```
+hello.txt
+world.txt
+hola.txt
+adios.txt
+```
+
+Running:
+```
+$ damv seq goodbye -s 1
+Pending moves:
+
+  adios.txt => goodbye1.txt
+  hello.txt => goodbye2.txt
+  hola.txt  => goodbye3.txt
+  world.txt => goodbye4.txt
+
+[Enter] to continue, anything else aborts:
+```
+
+Will yield:
+```
+goodbye1.txt
+goodbye2.txt
+goodbye3.txt
+goodbye4.txt
 ```

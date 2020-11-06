@@ -72,7 +72,6 @@ func sequence(args []string) {
 
 		newFileName := fmt.Sprintf(newNameTemplate, newName, num, oldFileExt)
 		move.NewPath = filepath.Join(cwd, newFileName)
-		fmt.Println(move.NewPath)
 	}
 
 	util.PrintMoves(cwd, moves)
